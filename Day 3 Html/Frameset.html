@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Frameset Rows, Cols, dan Bordercolor</title>
+</head>
+
+<!-- 
+    Tag <frameset> menggantikan <body>
+    Atribut rows membagi halaman secara horizontal
+-->
+<frameset rows="30%, 70%" border="5" bordercolor="blue">
+
+    <!-- 
+        Frame bagian atas
+        Menampilkan file header.html
+    -->
+    <frame src="header.html">
+
+    <!-- 
+        Frameset kedua untuk membagi bagian bawah secara vertikal
+        cols membagi halaman secara vertikal
+    -->
+    <frameset cols="25%, 75%" border="5" bordercolor="red">
+
+        <!-- 
+            Frame kiri
+            Biasanya digunakan untuk menu
+        -->
+        <frame src="menu.html">
+
+        <!-- 
+            Frame kanan
+            Biasanya digunakan untuk konten utama
+        -->
+        <frame src="content.html">
+
+    </frameset>
+
+</frameset>
+</html>
