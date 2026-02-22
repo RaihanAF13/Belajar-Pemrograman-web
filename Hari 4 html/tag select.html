@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contoh Tag Select HTML</title>
+</head>
+<body>
+
+    <!-- Judul form -->
+    <h2>Contoh Penggunaan Tag Select</h2>
+
+    <!-- 
+        Tag <form>
+        Digunakan untuk membungkus input yang akan dikirim ke server
+    -->
+    <form action="proses.php" method="post">
+
+        <!-- 
+            Tag <label>
+            Digunakan untuk memberi keterangan pada input/select
+            for="pekerjaan" harus sama dengan id pada select
+        -->
+        <label for="pekerjaan">Pilih Pekerjaan:</label>
+        <br><br>
+
+        <!-- 
+            Tag <select>
+            Digunakan untuk membuat dropdown / pilihan
+            name  : nama data yang dikirim ke server
+            id    : pengenal elemen (untuk label & JS)
+        -->
+        <select name="pekerjaan" id="pekerjaan">
+
+            <!-- 
+                Tag <option>
+                Pilihan pertama
+                value="" berarti nilainya kosong
+                selected membuat opsi ini terpilih secara default
+            -->
+            <option value="" selected>-- Pilih Pekerjaan --</option>
+
+            <!-- 
+                Option biasa
+                value="programmer" adalah data yang dikirim ke server
+            -->
+            <option value="programmer">Programmer</option>
+
+            <!-- Pilihan lainnya -->
+            <option value="designer">Designer</option>
+            <option value="content_creator">Content Creator</option>
+            <option value="pelajar">Pelajar</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- 
+            Tag <button>
+            Digunakan untuk mengirim form
+            type="submit" artinya mengirim data ke server
+        -->
+        <button type="submit">Kirim</button>
+
+    </form>
+
+</body>
+</html>
