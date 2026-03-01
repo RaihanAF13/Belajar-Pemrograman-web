@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Image</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300" style="border:1px solid #000000;">
+        </canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        var myImg = new Image();
+        myImg.src = 'RaidenZ.png';
+
+        myImg.onload = function() {
+            context.drawImage(myImg, 0, 0, myImg.width/4, myImg.height/4);
+        };
+    </script>
+</body>
+</html>
