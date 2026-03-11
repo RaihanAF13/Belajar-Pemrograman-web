@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    height:100vh;
+}
+
+#teks{
+    position:absolute;
+    left:200px;
+    top:200px;
+    font-size:24px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<p id="teks">Tangkap Aku Kalau Bisa 😜</p>
+
+<script>
+
+const teks = document.getElementById("teks");
+
+teks.addEventListener("mouseover", function(){
+
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+
+    teks.style.left = x + "px";
+    teks.style.top = y + "px";
+
+});
+
+</script>
+
+</body>
+</html>
