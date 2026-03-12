@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Belajar Border, Padding, Margin dan Responsive</title>
+
+<style>
+
+/* 
+BODY
+mengatur font dan background seluruh halaman
+*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 
+CONTAINER
+width: 80% -> lebar halaman 80% dari layar
+margin:auto -> membuat halaman berada di tengah
+*/
+.container{
+    width:80%;
+    margin:auto;
+}
+
+/*
+HEADER
+border -> membuat garis
+padding -> jarak isi dengan garis
+margin-bottom -> jarak header dengan elemen bawahnya
+*/
+header{
+    background-color: #4CAF50;
+    color:white;
+    border:3px solid black; /* garis tepi */
+    padding:20px; /* jarak isi dengan border */
+    margin-bottom:20px; /* jarak header dengan elemen berikutnya */
+}
+
+/*
+CARD
+digunakan sebagai kotak konten
+*/
+.card{
+    background:white;
+
+    border:2px solid #333; /* garis kotak */
+
+    padding:20px; /* jarak teks ke border */
+
+    margin-bottom:20px; /* jarak antar card */
+
+}
+
+/*
+BOX CONTAINER
+display:flex -> membuat elemen sejajar
+gap -> jarak antar box
+*/
+.box-container{
+    display:flex;
+    gap:20px;
+}
+
+/*
+BOX
+flex:1 -> membuat semua box sama besar
+*/
+.box{
+    background:lightblue;
+
+    border:3px solid blue;
+
+    padding:30px;
+
+    margin:10px;
+
+    text-align:center;
+}
+
+
+/*
+=========================
+RESPONSIVE DESIGN
+=========================
+
+Jika layar <= 768px (tablet / hp)
+
+box akan turun kebawah (tidak sejajar)
+*/
+@media (max-width:768px){
+
+    .box-container{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER WEBSITE -->
+<header>
+<h1>Belajar CSS Box Model</h1>
+<p>Contoh penggunaan Border, Padding, Margin dan Responsive</p>
+</header>
+
+
+<!-- CARD KONTEN -->
+<div class="card">
+<h2>Apa itu Border?</h2>
+<p>
+Border adalah garis yang mengelilingi sebuah elemen HTML.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Apa itu Padding?</h2>
+<p>
+Padding adalah jarak antara isi elemen dengan border.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Apa itu Margin?</h2>
+<p>
+Margin adalah jarak antara elemen dengan elemen lainnya.
+</p>
+</div>
+
+
+
+<!-- CONTOH FLEXBOX RESPONSIVE -->
+<div class="box-container">
+
+<div class="box">
+Box 1
+</div>
+
+<div class="box">
+Box 2
+</div>
+
+<div class="box">
+Box 3
+</div>
+
+</div>
+
+
+</div>
+    
+</body>
+</html>

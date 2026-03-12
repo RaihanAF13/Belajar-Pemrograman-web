@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+<!-- 
+viewport penting untuk responsive
+agar ukuran website mengikuti ukuran layar HP / tablet
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contoh Web Responsive</title>
+
+<style>
+
+/* 
+STYLE DASAR WEBSITE
+*/
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+
+/*
+HEADER WEBSITE
+*/
+header{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/*
+CONTAINER
+digunakan untuk menyusun box
+display:flex -> membuat box sejajar
+*/
+.container{
+    display:flex;
+}
+
+
+/*
+BOX KONTEN
+flex:1 -> membuat semua box sama besar
+*/
+.box{
+    background-color:lightblue;
+    padding:40px;
+    text-align:center;
+    border:2px solid black;
+}
+
+
+/*
+=========================
+RESPONSIVE MEDIA QUERY
+=========================
+
+Jika layar lebih kecil dari 768px
+biasanya ukuran tablet / hp
+*/
+@media (max-width:768px){
+
+    /*
+    flex-direction:column
+    membuat box yang tadinya horizontal
+    menjadi vertikal
+    */
+
+    .container{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Contoh Web Responsive</h1>
+</header>
+
+
+<div class="container">
+
+<div class="box">
+Konten 1
+</div>
+
+<div class="box">
+Konten 2
+</div>
+
+<div class="box">
+Konten 3
+</div>
+
+</div>
+
+</body>
+</html>
