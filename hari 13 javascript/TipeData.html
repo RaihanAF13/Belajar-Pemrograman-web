@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ===============================
+// CONTOH SEMUA TIPE DATA JAVASCRIPT
+// ===============================
+
+// 1. STRING (teks)
+let nama = "Raihan"; // tipe data string (pakai tanda kutip)
+
+// 2. NUMBER (angka)
+let umur = 20; // angka bulat
+let tinggi = 173.5; // angka desimal
+
+// 3. BOOLEAN (true / false)
+let isMahasiswa = true; // benar
+let sudahKerja = false; // salah
+
+// 4. ARRAY (kumpulan data dalam satu variabel)
+let hobi = ["Gaming", "Coding", "Membaca"]; 
+// index:     0         1         2
+
+// 5. OBJECT (data kompleks dengan key dan value)
+let mahasiswa = {
+  nama: "Raihan",
+  umur: 20,
+  jurusan: "Informatika"
+};
+
+// 6. UNDEFINED (variabel belum ada nilai)
+let nilai; // belum diisi → undefined
+
+// 7. NULL (nilai kosong yang disengaja)
+let alamat = null;
+
+// 8. BIGINT (angka sangat besar)
+let angkaBesar = 12345678901234567890n;
+
+// 9. SYMBOL (nilai unik)
+let idUnik = Symbol("id");
+
+// ===============================
+// MENAMPILKAN SEMUA DATA
+// ===============================
+
+console.log("String:", nama);
+console.log("Number:", umur, tinggi);
+console.log("Boolean:", isMahasiswa, sudahKerja);
+
+// Mengakses array
+console.log("Array:", hobi);
+console.log("Hobi pertama:", hobi[0]);
+
+// Mengakses object
+console.log("Object:", mahasiswa);
+console.log("Nama mahasiswa:", mahasiswa.nama);
+
+// Undefined & Null
+console.log("Undefined:", nilai);
+console.log("Null:", alamat);
+
+// BigInt & Symbol
+console.log("BigInt:", angkaBesar);
+console.log("Symbol:", idUnik);
+
+// ===============================
+// BONUS: CEK TIPE DATA
+// ===============================
+
+console.log(typeof nama);        // string
+console.log(typeof umur);        // number
+console.log(typeof isMahasiswa); // boolean
+console.log(typeof hobi);        // object (array dianggap object di JS)
+console.log(typeof mahasiswa);   // object
+console.log(typeof nilai);       // undefined
+console.log(typeof alamat);      // object (ini keunikan JS)
+console.log(typeof angkaBesar);  // bigint
+console.log(typeof idUnik);      // symbol
+    </script>
+</body>
+</html>

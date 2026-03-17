@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2 Variabel dan Tipe Data</title>
+</head>
+<body>
+    <script>
+        let nama = "Raihan";
+        let umur = 21;
+        let isMahasiswa = true;
+        let hobi = ["membaca", "bermain game", "bersepeda"];
+        let mahasiswa = { nama: "Raihan", jurusan: "Informatika" };
+        let nilai; // variabel tanpa nilai (undefined)
+        let alamat = null; // variabel dengan nilai null
+        let angkaBesar = 9007199254740991n; // BigInt
+        let idUnik = Symbol("id"); // Symbol
+
+        console.log("Nama: " + nama);
+        console.log("Umur: " + umur);
+        console.log("Mahasiswa: " + isMahasiswa);
+        console.log("Hobi: " + hobi.join(", "));
+        console.log("Mahasiswa Object: ", mahasiswa);
+        console.log("Nilai: " + nilai);
+        console.log("Alamat: " + alamat);
+        console.log("Angka Besar: " + angkaBesar);
+        console.log("ID Unik: ", idUnik);
+
+        // Menampilkan tipe data
+        console.log(typeof nama);       // string
+        console.log(typeof umur);       // number
+        console.log(typeof isMahasiswa); // boolean
+        console.log(typeof hobi);       // object
+        console.log(typeof mahasiswa);  // object
+        console.log(typeof nilai);      // undefined
+        console.log(typeof alamat);     // object
+        console.log(typeof angkaBesar); // bigint
+        console.log(typeof idUnik);     // symbol
+    </script>
+
+</body>
+</html>

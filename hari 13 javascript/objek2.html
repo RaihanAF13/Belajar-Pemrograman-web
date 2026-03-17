@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Object mobil
+let mobil = {
+  merk: "Toyota",        // merek mobil (string)
+  model: "Avanza",       // tipe mobil (string)
+  tahun: 2022,           // tahun (number)
+  warna: "Hitam",        // warna (string)
+  kecepatan: 0,          // kecepatan awal (number)
+
+  // method untuk menambah kecepatan
+  gas: function() {
+    this.kecepatan += 10;
+    console.log("Mobil melaju, kecepatan sekarang: " + this.kecepatan);
+  },
+
+  // method untuk mengurangi kecepatan
+  rem: function() {
+    this.kecepatan -= 5;
+    console.log("Mobil melambat, kecepatan sekarang: " + this.kecepatan);
+  }
+};  
+    </script>
+    
+
+</body>
+</html>
