@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        // bagian deklarasi 
+        var corp = "educative game";
+        var corpweb = "www.educativegames.net";
+        var visit = "kunjungilah www.google.com";
+        var nilai = "A, B, C, D, E";
+
+        document.write(corp[2]); //hasilnya "u"
+        document.write(corp.length); //hasilnya 15
+        document.write(corpweb.indexOf("games")); //hasilnya 10
+        document.write(visit.lastIndexOf("www")); //hasilnya 17
+        document.write(nilai.split(", ")); //hasilnya ["A", "B", "C", "D", "E"]
+        document.write(corp.toUpperCase()); //hasilnya "EDUCATIVE GAME"
+        document.write(corp.toLowerCase()); //hasilnya "educative game"
+        document.write(corp.replace("game", "platform")); //hasilnya "educative platform"
+        document.write(corp.substring(0, 9)); //hasilnya "educative"
+        var hasil = visit.replace("www.google.com", "www.educativegames.net");
+        document.write(hasil2[0]); //hasilnya A"
+    </script>
+</body>
+</html>
