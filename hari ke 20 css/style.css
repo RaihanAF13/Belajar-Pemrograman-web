@@ -1,0 +1,9 @@
+.Awesome{
+    background-color: rgb(44, 122, 148);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 100;
+    border: 2px solid black;
+    width: 300px;
+    line-height: 5;
+}
