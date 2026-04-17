@@ -1,0 +1,62 @@
+/* --- GAYA DASAR UNTUK HALAMAN --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* KOTAK ORANG TUA (PARENT) */
+.parent-box {
+    color: rgb(89, 0, 197); /* Semua teks di dalamnya jadi merah karena inheritance */
+    border: 5px solid blue; /* Border TIDAK diwariskan ke anak */
+    padding: 20px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.child {
+    border: 1px solid #ccc;
+    padding: 15px;
+    flex: 1;
+}
+
+/* --- 1. CONTOH INHERIT --- */
+.btn-inherit {
+    /* Normalnya, tombol punya warna teks hitam bawaan browser.
+       Dengan 'inherit', kita paksa dia fotokopi warna merah dari parent-box.
+    */
+    color: inherit; 
+    border: 1px solid gray;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* --- 2. CONTOH INITIAL --- */
+.text-initial {
+    /* Tag <strong> aslinya tebal (bold). 
+       'initial' akan membuang sifat tebal itu dan balik ke 
+       nilai dasar CSS untuk font-weight, yaitu 'normal'.
+    */
+    font-weight: initial;
+    color: black;
+}
+
+/* --- 3. CONTOH UNSET --- */
+.box-unset {
+    /* Memberikan gaya sementara dulu agar terlihat bedanya */
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid green;
+    margin-top: 10px;
+
+    /* Gunakan UNSET untuk membersihkan semua gaya di atas!
+       - Properti 'color' akan jadi INHERIT (ikut merah dari parent).
+       - Properti 'background' & 'border' akan jadi INITIAL (hilang/transparan).
+    */
+    all: unset;
+}

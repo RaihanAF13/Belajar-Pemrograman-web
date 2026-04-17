@@ -1,0 +1,15 @@
+.parent-box{
+    color: salmon;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid rgb(255, 0, 0);
+    padding: 20px;
+}
+a{
+    color: inherit; /* Warna teks link ikut warna parent (salmon) */
+    text-decoration: none;
+    font-weight: bold;
+}
+strong {
+    font-weight: initial; /* Buang sifat tebal, jadi normal */
+    color: blue; /* Tetap biru karena ini spesifik untuk <strong> */
+}

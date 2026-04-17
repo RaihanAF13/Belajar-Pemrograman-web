@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Keywords</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="parent-box">
+        <h1>Tutorial CSS: Inherit, Initial, Unset</h1>
+        <p>Kotak ini adalah <strong>Parent (Orang Tua)</strong> dengan warna teks merah dan border biru.</p>
+
+        <div class="container">
+            <div class="child inherit-box">
+                <h3>Contoh: Inherit</h3>
+                <p>Tombol ini dipaksa ikut warna teks orang tuanya (Merah).</p>
+                <button class="btn-inherit">Tombol Inherit</button>
+            </div>
+
+            <div class="child initial-box">
+                <h3>Contoh: Initial</h3>
+                <p>Tag <strong> ini dipaksa balik ke setelan pabrik CSS (Normal/Tipis).</p>
+                <strong class="text-initial">Saya Strong tapi Tipis</strong>
+            </div>
+
+            <div class="child unset-box">
+                <h3>Contoh: Unset</h3>
+                <p>Elemen ini menggunakan unset untuk semua propertinya.</p>
+                <div class="box-unset">Kotak Unset</div>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
